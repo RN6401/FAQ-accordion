@@ -1,0 +1,70 @@
+/*importing fonts from Google font*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Work Sans', 'san-serif';
+    background-color: #F9EEFF;
+    background-image: url(assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat; /*split background in half*/
+    background-size: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+#container {
+    /*set a size for the container so it will not take up the whole screen*/
+    max-width: 500px;
+    /*center the container*/
+    margin: 0 auto;
+    /*add space to the top of container. 20 vh means 20% of the view high*/
+    margin-top: 25vh;
+    /*add space to the bottom of container*/
+    margin-bottom: 25vh; 
+}
+
+.card{
+    /*add background color for card*/
+    background-color: white;
+    /*add padding for elements inside card*/
+    padding: 40px;
+    /*make background border round*/
+    border-radius: 10px;
+}
+
+.img_star {
+    /*make image smaller*/
+    width: 30px; 
+}
+
+.headin{
+    display: flex;
+    gap: 20px; 
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: -30px;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between; /* Aligns the text to the left and the icon to the right */
+    align-items: center; 
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.question:hover{
+    color: #b34fc3;
+}
+
+.img_plus{
+    width: 25px; /* Ensures the icon's aspect ratio is preserved */
+}
+
+.answer {
+    display: none; /* Hide all answers initially */
+    font-size: 15px;
+    font-weight: 400;
+    color: #9e1c9ed2;
+}
